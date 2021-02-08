@@ -1,12 +1,10 @@
 import * as React from "react";
 import styles from "./BitcoinPrice.module.scss";
 import { IBitcoinPriceProps } from "./IBitcoinPriceProps";
-import { escape } from "@microsoft/sp-lodash-subset";
 import { FunctionComponent } from "react";
-import useFetch from "use-http";
 import { ICurrentPrice } from "./ICurrentPrice";
 
-import useAxios from 'axios-hooks'
+import useAxios from 'axios-hooks';
 
 const BitcoinPrice: FunctionComponent<IBitcoinPriceProps> = (props) => {
 
