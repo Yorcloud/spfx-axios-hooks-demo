@@ -1,8 +1,8 @@
-# sp-fx-bitcoin-use-fetch-demo
+# spfx-axioshooks-demo
 
 ## Summary
 
-Short summary on functionality and used technologies.
+Demo of using Axios Hooks to call an API
 
 [picture of the solution in action, if possible]
 
@@ -25,7 +25,7 @@ Short summary on functionality and used technologies.
 
 Solution|Author(s)
 --------|---------
-folder name | Author details (name, company, twitter alias with link)
+spfx-axioshooks-demo | Rob Pearmain (www.yorcloud.com)
 
 ## Version history
 
@@ -56,9 +56,8 @@ Description of the extension that expands upon high-level summary above.
 
 This extension illustrates the following concepts:
 
-- topic 1
-- topic 2
-- topic 3
+- axios Hooks
+- API Calls
 
 > Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
 
