@@ -19,7 +19,7 @@
     "group": { "default": "Other" },
     "title": { "default": "Bitcoin Price" },
     "description": { "default": "Webpart to show the current price of Bitcoin" },
-    "officeFabricIconFontName": "Page",
+    "officeFabricIconFontName": "AllCurrency",
     "properties": {
       "description": "Bitcoin Price"
     }

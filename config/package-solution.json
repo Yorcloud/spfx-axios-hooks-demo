@@ -1,14 +1,14 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "sp-fx-bitcoin-use-fetch-demo-client-side-solution",
+    "name": "SPFx Bitcoin useFetch Demo",
     "id": "a4de5e94-4c01-4180-8c1b-f7c211647fb7",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
     "developer": {
-      "name": "",
-      "websiteUrl": "",
+      "name": "yorcloud",
+      "websiteUrl": "https://www.yorcloud.com",
       "privacyUrl": "",
       "termsOfUseUrl": "",
       "mpnId": ""
