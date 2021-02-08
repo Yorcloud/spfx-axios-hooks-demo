@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "bitcoin-price-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/bitcoinPrice/BitcoinPriceWebPart.js",
+          "manifest": "./src/webparts/bitcoinPrice/BitcoinPriceWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "BitcoinPriceWebPartStrings": "lib/webparts/bitcoinPrice/loc/{locale}.js"
+  }
+}
