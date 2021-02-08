@@ -6,18 +6,14 @@ import { FunctionComponent } from "react";
 import useFetch from "use-http";
 import { ICurrentPrice } from "./ICurrentPrice";
 
+import useAxios from 'axios-hooks'
+
 const BitcoinPrice: FunctionComponent<IBitcoinPriceProps> = (props) => {
-  const options = {};
 
-  
-
-  // these options accept all native `fetch` options
-  // the last argument below [] means it will fire onMount (GET by default)
-  const { loading, error, data = null } = useFetch(
-    "https://api.coindesk.com/v1/bpi/currentprice.json",
-    options,
-    []
+  const [{ data, loading, error }, refetch] = useAxios(
+    "https://api.coindesk.com/v1/bpi/currentprice.json"
   );
+
   return (
     <>
       {error && "Error!"}
@@ -35,6 +31,7 @@ const BitcoinPrice: FunctionComponent<IBitcoinPriceProps> = (props) => {
 			  <p>{<span dangerouslySetInnerHTML={{__html: o.bpi.USD.symbol}} />} {o.bpi.USD.rate_float.toFixed(2)} {o.bpi.USD.description}</p>
 			
 			  <p><a href='https://www.coindesk.com/price/bitcoin'>Powered by Coindesk </a></p>
+			  <button onClick={async () => {await refetch();}}>refetch</button>
 		  </div>;
         })}
     </>
