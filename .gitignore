@@ -9,6 +9,7 @@ node_modules
 # Build generated files
 dist
 lib
+debug
 # solution - I want to build to production so can be downloaded from GIT
 temp
 #*.sppkg   - I want to build to production so can be downloaded from GIT
