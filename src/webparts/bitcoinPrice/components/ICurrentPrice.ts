@@ -1,3 +1,6 @@
+// Generated using quicktype (https://quicktype.io/typescript)
+// quicktype https://api.coindesk.com/v1/bpi/currentprice.json --lang ts --just-types -o ICurrentPrice.ts
+
 export interface ICurrentPrice {
     time:       Time;
     disclaimer: string;
