@@ -13,7 +13,7 @@ const BitcoinPrice: FunctionComponent<IBitcoinPriceProps> = (props) => {
 
   // these options accept all native `fetch` options
   // the last argument below [] means it will fire onMount (GET by default)
-  const { get, loading, error, data = null } = useFetch(
+  const { loading, error, data = null } = useFetch(
     "https://api.coindesk.com/v1/bpi/currentprice.json",
     options,
     []
@@ -35,7 +35,6 @@ const BitcoinPrice: FunctionComponent<IBitcoinPriceProps> = (props) => {
 			  <p>{<span dangerouslySetInnerHTML={{__html: o.bpi.USD.symbol}} />} {o.bpi.USD.rate_float.toFixed(2)} {o.bpi.USD.description}</p>
 			
 			  <p><a href='https://www.coindesk.com/price/bitcoin'>Powered by Coindesk </a></p>
-			  <button onClick={() => get()}>Refresh</button>
 		  </div>;
         })}
     </>
